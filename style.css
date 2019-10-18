@@ -1,0 +1,234 @@
+body{
+background: rgb(28, 20, 14);
+    width:100%;
+}
+#main{
+    background: rgb(208,208,208);
+    width: 83%;
+    padding: 10px;
+    min-height: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: 200px 200px 200px 400px ;
+    grid-template-rows: 200px 200px 200px 400px;
+
+
+}
+
+/* ALL THE block*/
+.block {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    transition: background-color 0.5s;
+    display: flex;
+
+}
+/* block ABOUT ME*/
+
+.header_aboutMe{
+    width: 83%;
+    height: 200px;
+    float: left;
+    color: white;
+    background: rgb(188, 162, 91);
+    position: absolute;
+    letter-spacing: 5px;
+    border-bottom: 1px solid white;
+    z-index: 999;
+
+    grid-column: 1/5;
+    grid-row: 1;
+}
+#textGras{
+    font-size: 25px;
+}
+.aboutMe:hover{
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 0.5s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 4;
+    }
+}
+
+@keyframes flash {
+    0% {opacity: 0.1;}
+    100% {opacity: 4;}
+    }
+
+/* block PROFILE*/
+#B1_haut{                        /* les 3 Blocks rangé du HAUT*/
+    width: 41.5% ;
+}
+.profile{
+    width: 13%;
+    height: 200px;
+    float: left;
+    background: rgb(169, 71, 24);
+    margin-top: 200px;
+
+    grid-column: 1/1;
+    grid-row: 2;
+}
+
+.profile:hover{
+    background: rgb(255, 93, 21);
+
+}
+/* block EDUCATION*/
+.education{
+    width: 13%;
+    float: left;
+    background: rgb(163, 59, 30);
+    margin-top: 200px;
+    margin-left: 200px;
+
+    grid-column: 2/1;
+    grid-row: 2;
+
+}
+.education:hover{
+    background: rgb(255, 85, 43);
+}
+
+/* block EXPERIENCE*/
+.experience{
+    width: 13% ;
+    float: left;
+    background: rgb(175, 40, 44);
+    margin-top: 200px;
+    margin-left: 400px;
+
+    grid-column: 3/1;
+    grid-row: 2;
+}
+.experience:hover{
+    background: rgb(255, 54, 58);
+}
+
+#B2_bas{                            /* Les 3 Blocks rangé du BAS*/
+    width: 41.5%;
+
+}
+
+.socialMenu{
+    width: 13% ;
+    float: left;
+    background: #a56f2e;
+    margin-top: 400px;
+
+    grid-column: 1/1;
+    grid-row: 3;
+}
+.socialMenu:hover{
+    background: #eba040;
+}
+
+/* block CONTACT*/
+.contact{
+    width: 13% ;
+    float: left;
+    background: #186da9;
+    margin-top: 400px;
+    margin-left: 200px;
+
+    grid-column: 2/1;
+    grid-row: 3;
+}
+.contact:hover{
+    background: #22a7ff
+}
+
+/* block PORTFOLIO*/
+.portfolio{
+    width: 13% ;
+    float: left;
+    background: rgb(188, 156, 93);
+    margin-top: 400px;
+    margin-left: 400px;
+
+    grid-column: 3/1;
+    grid-row: 3;
+}
+.portfolio:hover{
+background: rgb(255, 215, 120)
+}
+/* block BLOG*/
+.footer_blog{
+    float: left;
+    width: 83%;
+    text-align:center;
+    background: rgb(100, 79, 53);
+    margin-top: 600px;
+    border-top: 1px solid white;
+    z-index: 9999;
+
+    grid-column: 1/5;
+    grid-row: 4;
+}
+
+/* block TEXT*/
+.text{
+    text-align:center;
+    padding: 60px;
+}
+
+/*les PICTO
+rajouter après*/
+
+
+
+/* IMAGE*/
+#photo{
+    width: 45%;
+    height: 605px;
+    margin-left: 600px;
+    margin-top: 200px;
+    overflow:auto;
+    float:right;
+    position: absolute;
+    background: 100%;
+
+    grid-column: 4/2;
+    grid-row: 2;
+
+
+/* le responsive*/
+
+}
+@media all and (max-width: 425px)
+{
+    #main {width: 100%;padding:0;}
+    #B1_haut{width: 50%;}
+    #B2_bas{width: 50%;}
+    #photo{width: 100%;}
+}
+
+@media (max-width: 425px) and (max-width:  767px)
+{
+    #main {width: 100%;padding:0;}
+    #B1_haut{width: 100%;}
+    #B2_bas{width: 100%;}
+    #photo{width: 100%;}
+    .text{max-width: auto;}
+    }
+@media (max-width: 768px) and (max-width: 1388px) {
+#main {width: 100%;}
+#B1_haut{width: 100%;}
+#photo{width: 80%;}
+}
