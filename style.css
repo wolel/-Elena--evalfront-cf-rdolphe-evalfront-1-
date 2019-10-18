@@ -14,7 +14,6 @@ background: rgb(28, 20, 14);
     grid-template-columns: 200px 200px 200px 400px ;
     grid-template-rows: 200px 200px 200px 400px;
 
-
 }
 
 /* ALL THE block*/
@@ -30,7 +29,6 @@ background: rgb(28, 20, 14);
     border: none;
     transition: background-color 0.5s;
     display: flex;
-
 }
 /* block ABOUT ME*/
 
@@ -225,7 +223,6 @@ rajouter après*/
     #B1_haut{width: 100%;}
     #B2_bas{width: 100%;}
     #photo{width: 100%;}
-    .text{max-width: auto;}
     }
 @media (max-width: 768px) and (max-width: 1388px) {
 #main {width: 100%;}
